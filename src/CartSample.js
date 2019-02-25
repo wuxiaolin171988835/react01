@@ -34,7 +34,8 @@ class CartSample extends Component {
         {
           id: 3,
           text: prevState.text,
-          price: 999
+          price: 999,
+          num: 1
         }
       ]
     }));
