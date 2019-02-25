@@ -122,13 +122,11 @@ class CartSample extends Component {
         <button onClick={this.addGood}>添加商品</button>
         <ul>{goodsList}</ul>
         {this.props.title && <h1>{this.props.title}</h1>}
-        {
-          <Cart
-            cart={cart}
-            addCount={this.addCount}
-            minusCount={this.minusCount}
-          />
-        }
+        <Cart
+          cart={cart}
+          addCount={this.addCount}
+          minusCount={this.minusCount}
+        />
       </div>
     );
   }
