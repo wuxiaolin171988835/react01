@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import logo from "./logo.svg";
 import LifeCircle from "./LifeCircle";
+import { Button } from "antd";
 
 import "./App.css";
 function Welcome(props) {
@@ -46,6 +47,7 @@ class App extends Component {
         <SubjectList list={list} />
         <Welcome user="wuxiaolin" />
         <LifeCircle />
+        <Button type="primary">primary</Button>
       </div>
     );
   }
