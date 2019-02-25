@@ -86,7 +86,6 @@ class CartSample extends Component {
   addCount = good => {
     const newCart = [...this.state.cart];
     const index = newCart.findIndex(item => item.text === good.text);
-    const item = newCart[index];
     newCart.splice(index, 1, { ...good, num: good.num + 1 });
     this.setState({
       cart: newCart
@@ -98,7 +97,6 @@ class CartSample extends Component {
   minusCount = good => {
     const newCart = [...this.state.cart];
     const index = newCart.findIndex(item => item.text === good.text);
-    const item = newCart[index];
     if (good.num > 1) {
       newCart.splice(index, 1, { ...good, num: good.num - 1 });
       this.setState({
